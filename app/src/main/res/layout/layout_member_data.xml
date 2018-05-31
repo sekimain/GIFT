@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/member_data_User_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:ems="15"
+        android:background="#000043"
+        android:text="@string/user_information"
+        android:textColor="#aaaaaa"
+        android:paddingStart="10dp"
+        android:textSize="30dp"/>
+
+    <ImageView
+        android:id="@+id/member_data_User_photo"
+        android:layout_width="93dp"
+        android:layout_height="93dp"
+        android:layout_below="@+id/member_data_User_title"
+        app:srcCompat="@drawable/main_group_default_photo" />
+
+    <TextView
+        android:id="@+id/member_data_User_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/member_data_User_title"
+        android:layout_toEndOf="@+id/member_data_User_photo"
+        android:layout_marginStart="5dp"
+        android:ems="10" />
+    <TextView
+        android:id="@+id/member_data_User_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/member_data_User_name"
+        android:layout_toEndOf="@+id/member_data_User_photo"
+        android:layout_marginStart="5dp"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/member_data_User_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/member_data_User_id"
+        android:layout_toEndOf="@+id/member_data_User_photo"
+        android:layout_marginStart="5dp"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/member_data_User_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/member_data_User_email"
+        android:layout_toEndOf="@+id/member_data_User_photo"
+        android:layout_marginStart="5dp"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/member_data_User_country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/member_data_User_phone"
+        android:layout_toEndOf="@+id/member_data_User_photo"
+        android:layout_marginStart="5dp"
+        android:ems="10" />
+
+</RelativeLayout>

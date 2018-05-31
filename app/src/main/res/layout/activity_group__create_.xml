@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mypar.gift.Group.Group_Create_Activity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="255dp">
+
+        <TextView
+            android:id="@+id/textView_create_new_group"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="20dp"
+            android:background="#000043"
+            android:gravity="center_horizontal"
+            android:text="CREATE NEW GROUP"
+            android:textColor="#FFFFFF"
+            android:textSize="25dp">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/create_group_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView_create_new_group"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="15dp"
+            android:background="#bbbbbb"
+            android:ems="10"
+            android:hint="@string/new_group_name"
+            android:inputType="text"
+            android:paddingStart="10dp"
+            android:textSize="10pt"
+            tools:ignore="RtlSymmetry" />
+
+
+        <EditText
+            android:id="@+id/create_group_professor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/create_group_name"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="15dp"
+            android:background="#bbbbbb"
+            android:ems="10"
+            android:hint="New group professor"
+            android:inputType="text"
+            android:paddingStart="10dp"
+            android:textSize="10pt"
+            tools:ignore="RtlSymmetry" />
+
+        <EditText
+            android:id="@+id/create_group_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/create_group_professor"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="15dp"
+            android:background="#bbbbbb"
+            android:drawableStart="@drawable/icon_email"
+            android:ems="10"
+            android:hint="@string/e_mail"
+            android:inputType="textEmailAddress"
+            android:paddingStart="10dp"
+            android:textSize="10pt"
+            tools:ignore="RtlSymmetry" />
+
+        <EditText
+            android:id="@+id/create_group_intro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/create_group_email"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="15dp"
+            android:background="#bbbbbb"
+            android:ems="10"
+            android:hint="New group intro"
+            android:paddingStart="10dp"
+            android:textSize="10pt"
+            tools:ignore="RtlSymmetry" />
+
+        <Button
+            android:id="@+id/create_ok_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:text="Create" />
+
+        <ImageView
+            android:id="@+id/GroupImage"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_below="@+id/create_group_linearlayout"
+            android:layout_centerHorizontal="true"
+            android:background="@mipmap/ic_launcher_round" />
+
+        <LinearLayout
+            android:id="@+id/create_group_linearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="#0066ff"
+            android:orientation="horizontal"
+            android:layout_below="@+id/create_group_intro"
+            android:layout_marginBottom="20dp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="233dp">
+
+            <Spinner
+                android:id="@+id/create_group_college"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="10"
+                android:background="#ffffff"
+                android:layout_gravity="center"
+                android:entries="@array/College"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="215dp" />
+
+            <Spinner
+                android:id="@+id/create_group_class"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="10"
+                android:layout_marginStart="1dp"
+                android:layout_gravity="center"
+                android:background="#ffffff"
+                android:entries="@array/major_0" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>

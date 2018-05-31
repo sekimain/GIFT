@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mypar.gift.Activity.Register_Activity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/textView_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00bfff"
+            android:gravity="center_horizontal"
+            android:text="REGISTERATION"
+            android:textSize="35dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/register_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/icon_email"
+                android:layout_alignParentStart="true"
+                android:ems="10"
+                android:hint="@string/e_mail"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/register_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/register_email"
+                android:drawableStart="@drawable/icon_password"
+                android:ems="10"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="99dp" />
+
+            <EditText
+                android:id="@+id/register_password_check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/register_password"
+                android:drawableStart="@drawable/icon_password"
+                android:ems="10"
+                android:hint="@string/Password_check"
+                android:inputType="textPassword"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="99dp" />
+
+            <EditText
+                android:id="@+id/register_student_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/register_password_check"
+                android:ems="10"
+                android:hint="Student name"
+                android:inputType="text"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="198dp" />
+
+            <EditText
+                android:id="@+id/register_student_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/register_student_name"
+                android:ems="10"
+                android:hint="Student ID"
+                android:inputType="text"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="198dp" />
+
+            <EditText
+                android:id="@+id/register_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/register_student_id"
+                android:ems="10"
+                android:hint="Phone number without '-'"
+                android:inputType="text"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="198dp"
+                tools:ignore="TextFields" />
+
+            <Spinner
+                android:id="@+id/profile_country"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/register_phone"
+                android:entries="@array/Country" />
+
+            <Button
+                android:id="@+id/registerButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/register_id_check"
+                android:layout_alignBottom="@+id/register_id_check"
+                android:layout_alignParentEnd="true"
+                android:text="FInish"
+                tools:layout_editor_absoluteX="96dp"
+                tools:layout_editor_absoluteY="275dp" />
+
+            <ImageView
+                android:id="@+id/register_User_photo"
+                android:layout_width="300dp"
+                android:layout_height="274dp"
+                android:layout_alignParentEnd="true"
+                android:layout_toEndOf="@+id/register_email"
+                app:srcCompat="@drawable/main_group_default_photo" />
+
+            <Button
+                android:id="@+id/register_id_check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/profile_country"
+                android:text="E-mail Check" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessLeaf">
+
+
+        <ScrollView
+            android:id="@+id/thread_scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/comEdit"
+            android:fillViewport="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/titlelayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+                    <TextView
+                        android:id="@+id/Title"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="4"
+                        android:text="Default"
+                        android:textColor="#00a7f5"
+                        android:textSize="32sp" />
+
+                    <ImageView
+                        android:id="@+id/thread_button_accept"
+                        android:layout_width="60sp"
+                        android:layout_height="35sp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/icon_thread_accept2" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/Date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/titlelayout"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:text="default date" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/Date"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/Body"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="Content"
+                        android:textColor="#000"
+                        android:textSize="15sp" />
+
+                    <ImageView
+                        android:id="@+id/ArticleImg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        app:srcCompat="@drawable/ic_launcher" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="230sp" />
+                </LinearLayout>
+
+
+            </RelativeLayout>
+        </ScrollView>
+
+        <ImageView
+            android:id="@+id/file_btn"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:layout_above="@+id/listview_maxheight"
+            android:clickable="false"
+            android:focusable="true"
+            android:visibility="gone"
+            app:srcCompat="@drawable/icon_file" />
+
+        <TextView
+            android:id="@+id/file_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/file_btn"
+            android:layout_toEndOf="@+id/file_btn"
+            android:layout_marginBottom="5sp"
+            android:clickable="false"
+            android:visibility="gone"
+            android:text="No attached file"
+            android:textSize="15sp" />
+
+        <RelativeLayout
+            android:id="@+id/listview_maxheight"
+            android:layout_width="match_parent"
+            android:layout_height="200sp"
+            android:layout_above="@+id/comEdit"
+            android:background="#EEEEEE">
+
+            <android.support.v4.widget.SwipeRefreshLayout
+                android:id="@+id/thread_swipe_refresh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true">
+                <ListView
+                    android:id="@+id/listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:foregroundGravity="bottom"/>
+            </android.support.v4.widget.SwipeRefreshLayout>
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/comEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toStartOf="@+id/comBtn"
+            android:hint="Please enter your comment" />
+
+        <ImageView
+            android:id="@+id/comBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/comEdit"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="5dp"
+            app:srcCompat="@android:drawable/ic_menu_send" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

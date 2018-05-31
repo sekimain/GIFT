@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Country">
+        <item >Australia</item>
+        <item >Austria</item>
+        <item >Brazil</item>
+        <item >China</item>
+        <item >Colombia</item>
+        <item >Denmark</item>
+        <item >Egypt</item>
+        <item >France</item>
+        <item >Georgia</item>
+        <item >Germany</item>
+        <item >Ghana</item>
+        <item >Greece</item>
+        <item >Hong Kong</item>
+        <item >Hungary</item>
+        <item >India</item>
+        <item >Indonesia</item>
+        <item >Israel</item>
+        <item >Italy</item>
+        <item >Japan</item>
+        <item >Kenya</item>
+        <item >Korea, North</item>
+        <item >Kosovo</item>
+        <item >Kuwait</item>
+        <item >Laos</item>
+        <item >Luxembourg</item>
+        <item >Macau</item>
+        <item >Macedonia</item>
+        <item >Mexico</item>
+        <item >Minseki</item>
+        <item >Monaco</item>
+        <item >Mongolia</item>
+        <item >Morocco</item>
+        <item >Nepal</item>
+        <item >Niger</item>
+        <item >Nigeria</item>
+        <item >Oman</item>
+        <item >Pakistan</item>
+        <item >Peru</item>
+        <item >Poland</item>
+        <item >Portugal</item>
+        <item >Qatar</item>
+        <item >Romania</item>
+        <item >Russia</item>
+        <item >Republic of Korea</item>
+        <item >Singapore</item>
+        <item >Slovenia</item>
+        <item >Spain</item>
+        <item >Sudan</item>
+        <item >Taiwan</item>
+        <item >Turkey</item>
+        <item >Tuvalu</item>
+        <item >Uganda</item>
+        <item >United Kingdom</item>
+        <item >Vanuatu</item>
+        <item >Vietnam</item>
+        <item >Yemen</item>
+        <item >Zambia</item>
+    </string-array>
+    <string-array name="College">
+        <item >공과대학</item>
+        <item >인문사회과학대학</item>
+        <item >법과대학</item>
+        <item >경영대학</item>
+        <item >자연과학대학</item>
+        <item >전자정보공과대학</item>
+        <item >사회과학대학</item>
+        <item >동북아대학</item>
+        <item >인문대학</item>
+        <item >정책법학대학</item>
+        <item >소프트웨어융합대학</item>
+        <item >교양</item>
+    </string-array>
+    <string-array name="major_0">
+        <item >대학공통</item>
+        <item >화학공학과</item>
+        <item >환경공학과</item>
+        <item >건축공학과</item>
+        <item >건축학과</item>
+    </string-array>
+    <string-array name="major_1">
+        <item >대학공통</item>
+        <item >국어국문학과</item>
+        <item >영어영문학과</item>
+        <item >산업심리학과</item>
+        <item >미디어영상학부</item>
+        <item >동북아문화산업학부</item>
+    </string-array>
+    <string-array name="major_2">
+        <item >법학부</item>
+        <item >자산관리학과</item>
+    </string-array>
+    <string-array name="major_3">
+        <item >대학공통</item>
+        <item >경영학부</item>
+        <item >국제통상학부</item>
+    </string-array>
+    <string-array name="major_4">
+        <item >대학공통</item>
+        <item >수학과</item>
+        <item >화학과</item>
+        <item >생활체육학과</item>
+        <item >전자바이오물리학과</item>
+        <item >정보콘텐츠학과</item>
+    </string-array>
+    <string-array name="major_5">
+        <item >대학공통</item>
+        <item >전자공학과</item>
+        <item >전자통신공학과</item>
+        <item >컴퓨터공학과</item>
+        <item >컴퓨터소프트웨어학과</item>
+        <item >전기공학과</item>
+        <item >전자재료공학과</item>
+        <item >로봇학부</item>
+        <item >전자융합공학과</item>
+    </string-array>
+    <string-array name="major_6">
+        <item >행정학과</item>
+        <item >산업심리학과</item>
+        <item >미디어영상학부</item>
+    </string-array>
+    <string-array name="major_7">
+        <item >대학공통</item>
+        <item >동북아통상학부</item>
+        <item >국제통상학과</item>
+        <item >동북아문화산업학부</item>
+        <item >국제학부</item>
+    </string-array>
+    <string-array name="major_8">
+        <item >국어국문학과</item>
+        <item >영어영문학과</item>
+    </string-array>
+    <string-array name="major_9">
+        <item >대학공통</item>
+        <item >행정학과</item>
+        <item >법학부</item>
+        <item >국제학부</item>
+        <item >자산관리학과</item>
+    </string-array>
+    <string-array name="major_10">
+        <item >대학공통</item>
+        <item >컴퓨터정보공학부</item>
+        <item >소프트웨어학부</item>
+        <item >정보융합학부</item>
+    </string-array>
+    <string-array name="major_11">
+        <item >정보</item>
+        <item >과학과기술</item>
+        <item >언어와표현</item>
+        <item >인간과철학</item>
+        <item >사회와경제</item>
+        <item >글로벌문화와제2외국어</item>
+        <item >예술과체육</item>
+        <item >실용영어</item>
+        <item >서울권역e-러닝</item>
+        <item >교직</item>
+        <item >군사학</item>
+        <item >연계전공</item>
+        <item >융합교과목연계전공</item>
+        <item >K-vision2020 창업 및 산학현장실무</item>
+    </string-array>
+</resources>

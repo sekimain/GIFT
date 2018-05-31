@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mypar.gift.Activity.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF">
+
+            <TextView
+                android:id="@+id/textView_gift"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:background="#00bfff"
+                android:gravity="center_horizontal"
+                android:text="GIFT"
+                android:textSize="40dp" />
+
+            <ImageView
+                android:id="@+id/group_search_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="2dp"
+                android:background="#00bfff"
+                android:minHeight="50dp"
+                android:minWidth="50dp"
+                app:srcCompat="@drawable/icon_group_search"
+                tools:ignore="NotSibling" />
+
+            <ImageView
+                android:id="@+id/option_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="#00bfff"
+                android:minHeight="50dp"
+                android:minWidth="50dp"
+                app:srcCompat="@drawable/icon_option"
+                tools:ignore="NotSibling" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/create_new_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/option_btn"
+            android:drawable="@drawable/icon_group_create"
+            android:text="Create New Group"
+            android:textColor="#FFFFFF" />
+
+
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/main_swipe_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ListView
+                    android:id="@+id/main_list_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+                <TextView
+                    android:id="@+id/main_group_empty_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/Group_Data_Empty"
+                    android:drawableTop="@drawable/ic_launcher"
+                    android:textSize="20sp"
+                    android:visibility="gone"
+                    android:gravity="center"
+                    android:layout_below="@+id/main_list_view"
+                    tools:ignore="SmallSp" />
+
+            </RelativeLayout>
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

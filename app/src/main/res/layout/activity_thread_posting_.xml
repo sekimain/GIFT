@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.mypar.gift.Activity.Splash_Activity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/new_Thread_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#000043"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:title="POSTING"
+        app:titleTextColor="#aaaaaa">
+
+    </android.support.v7.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/title"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/icon_accept_white" />
+
+    <EditText
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/new_Thread_toolbar"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:hint="Fill in the title"
+        android:lines="1"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="202dp" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/title">
+        <LinearLayout
+            android:id="@+id/main_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/article"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="5"
+                android:background="@android:color/transparent"
+                android:hint="Fill in the contents."
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <ImageView
+                android:id="@+id/Artimage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <SlidingDrawer
+        android:id="@+id/slide"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:allowSingleTap="true"
+        android:animateOnClick="true"
+        android:bottomOffset="0dp"
+        android:layout_marginTop="200dp"
+        android:content="@+id/thread_posting_bottomlayout"
+        android:handle="@+id/handle"
+        android:orientation="vertical"
+        android:topOffset="60dp">
+
+        <ImageView
+            android:id="@+id/handle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:src="@drawable/icon_drawer" />
+
+        <LinearLayout
+            android:id="@+id/thread_posting_bottomlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000043"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/thread_posting_camera"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="3dp"
+                android:background="#FFFFFF"
+                android:drawableStart="@drawable/icon_camera"
+                android:ems="10"
+                android:lines="1"
+                android:paddingStart="10dp"
+                android:text="Image upload"
+                android:textSize="15pt"
+                tools:ignore="RtlSymmetry" />
+
+            <TextView
+                android:id="@+id/thread_posting_file"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="3dp"
+                android:background="#FFFFFF"
+                android:drawableStart="@drawable/icon_file"
+                android:ems="10"
+                android:lines="1"
+                android:paddingStart="10dp"
+                android:text="File upload"
+                android:textSize="15pt"
+                tools:ignore="RtlSymmetry" />
+
+        </LinearLayout>
+    </SlidingDrawer>
+</RelativeLayout>

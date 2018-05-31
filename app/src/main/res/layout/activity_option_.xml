@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gift_bg_gray_color">
+
+    <LinearLayout
+        android:id="@+id/setting_infor_layout"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/list_title_top_margin">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/setting_title_my_infor"
+            android:layout_marginStart="@dimen/list_box_left_margin"
+            android:layout_marginBottom="@dimen/list_title_bottom_margin"
+            android:textSize="@dimen/base_section_text_size"
+            android:textColor="@color/gift_text_button_title_color"/>
+
+        <FrameLayout
+            android:id="@+id/setting_list_my_profile_btn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/list_box_height"
+            android:background="@drawable/list_row_layout"
+            android:paddingStart="@dimen/list_box_left_margin"
+            android:paddingEnd="@dimen/list_arrow_right_margin">
+
+            <ImageView
+                android:layout_width="@dimen/list_drawableLeft_size"
+                android:layout_height="@dimen/list_drawableLeft_size"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/setting_icon_profile"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:layout_marginStart="@dimen/list_drawableLeft_margin"
+                android:text="@string/setting_menu_my_profile"
+                android:textColor="@color/gift_text_base_color"
+                android:textSize="@dimen/base_text_size"/>
+
+            <ImageView
+                android:id="@+id/Pro"
+                android:layout_width="@dimen/list_arrow_size"
+                android:layout_height="@dimen/list_arrow_size"
+                android:layout_gravity="right|center_vertical"
+                android:src="@drawable/arrow"
+                tools:ignore="RtlHardcoded" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/setting_list_accout_btn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/list_box_height"
+            android:background="@drawable/list_row_bottom_line_layout"
+            android:paddingStart="@dimen/list_box_left_margin"
+            android:paddingEnd="@dimen/list_arrow_right_margin">
+
+            <ImageView
+                android:layout_width="@dimen/list_drawableLeft_size"
+                android:layout_height="@dimen/list_drawableLeft_size"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/setting_icon_account"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:layout_marginStart="@dimen/list_drawableLeft_margin"
+                android:text="@string/setting_menu_account"
+                android:textColor="@color/gift_text_base_color"
+                android:textSize="@dimen/base_text_size"/>
+
+            <ImageView
+                android:id="@+id/Account"
+                android:layout_width="@dimen/list_arrow_size"
+                android:layout_height="@dimen/list_arrow_size"
+                android:layout_gravity="right|center_vertical"
+                android:src="@drawable/arrow"
+                tools:ignore="RtlHardcoded" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/setting_faq_layout"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/setting_infor_layout"
+        android:layout_marginTop="@dimen/list_title_top_margin">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/setting_title_service_infor"
+            android:layout_marginStart="@dimen/list_box_left_margin"
+            android:layout_marginBottom="@dimen/list_title_bottom_margin"
+            android:textSize="@dimen/base_section_text_size"
+            android:textColor="@color/gift_text_button_title_color"/>
+
+        <FrameLayout
+            android:id="@+id/setting_list_faq_btn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/list_box_height"
+            android:background="@drawable/list_row_bottom_line_layout"
+            android:paddingStart="@dimen/list_box_left_margin"
+            android:paddingEnd="@dimen/list_arrow_right_margin">
+
+            <ImageView
+                android:layout_width="@dimen/list_drawableLeft_size"
+                android:layout_height="@dimen/list_drawableLeft_size"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/setting_icon_faq"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:layout_marginStart="@dimen/list_drawableLeft_margin"
+                android:text="@string/setting_title_faq"
+                android:textColor="@color/gift_text_base_color"
+                android:textSize="@dimen/base_text_size"/>
+
+            <ImageView
+                android:layout_width="@dimen/list_arrow_size"
+                android:layout_height="@dimen/list_arrow_size"
+                android:layout_gravity="end|center_vertical"
+                android:src="@drawable/arrow"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

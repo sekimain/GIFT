@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/group_setting_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/group_setting_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/group_setting_linearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/group_setting_name_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#000000"
+                android:textColor="#aaaaaa"
+                android:textSize="20sp"
+                android:text="Group Name" />
+
+            <TextView
+                android:id="@+id/group_setting_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/group_setting_intro_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#000000"
+                android:textColor="#aaaaaa"
+                android:textSize="20sp"
+                android:text="Group Description" />
+
+            <TextView
+                android:id="@+id/group_setting_Intro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/group_setting_professor_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#000000"
+                android:textColor="#aaaaaa"
+                android:textSize="20sp"
+                android:text="Professor" />
+
+            <TextView
+                android:id="@+id/group_setting_professor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/group_setting_email_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#000000"
+                android:textColor="#aaaaaa"
+                android:textSize="20sp"
+                android:text="Administrator's E-mail" />
+
+            <TextView
+                android:id="@+id/group_setting_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:id="@+id/line1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#0066ff"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/create_group_linearlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/create_group_college"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="10"
+                    android:entries="@array/College"
+                    tools:layout_editor_absoluteX="8dp"
+                    tools:layout_editor_absoluteY="215dp" />
+
+                <LinearLayout
+                    android:id="@+id/line2"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#0066ff"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal">
+                </LinearLayout>
+
+                <Spinner
+                    android:id="@+id/create_group_class"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="10"
+                    android:entries="@array/major_0" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/line3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#0066ff"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="15dp"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/group_setting_photo"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginBottom="15dp"
+                android:layout_gravity="center"
+                android:background="@mipmap/ic_launcher_round" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/group_setting_reset"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#88ff88"
+                    android:layout_marginBottom="5dp"
+                    android:padding="4dp"
+                    app:srcCompat="@drawable/icon_reset" />
+
+                <ImageButton
+                    android:id="@+id/group_setting_Delete"
+                    android:layout_width="195dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:background="#ff8888"
+                    android:padding="5dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/icon_delete" />
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/group_setting_Done"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_gravity="center"
+                android:background="#aaaaff"
+                app:srcCompat="@drawable/icon_accept" />
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:foregroundGravity="center"
+                android:padding="5dp"
+                android:text="The window will close after update succeeds." />
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
